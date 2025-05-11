@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# 🎬 Cineguess
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Cineguess is a movie-guessing game inspired by Wordle and Letterboxd.  
+Players try to discover the secret movie using clues like genre, franchise, studio, country, release year, runtime, and rating.
 
-Currently, two official plugins are available:
+## 🚧 Project Status
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is currently in **testing and development phase**.  
+There are still several bugs, incomplete features and rough UI decisions being actively worked on.
 
-## Expanding the ESLint configuration
+Expect breaking changes and work-in-progress commits.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🧪 Features (In Progress)
 
-- Configure the top-level `parserOptions` property like this:
+- Autocomplete search with poster previews
+- Dynamic movie selection from TMDB (popular movies only)
+- Guess feedback based on multiple attributes
+- Responsive layout for mobile and desktop
+- Developer mode to preview the correct answer (for testing)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Tech Stack
+
+- React + Vite
+- TypeScript
+- TMDB API
+- Vercel (deployment)
+
+## 💡 Roadmap
+
+- [ ] Limit guess attempts (like Wordle)
+- [ ] LocalStorage for progress
+- [ ] Internationalization (i18n)
+- [ ] Scoreboard or ranking system
+- [ ] Better animations and transitions
+
+## 🛠️ How to Run Locally
+
+```bash
+pnpm install
+pnpm dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## ⚠️ Disclaimer
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project is for educational and experimental purposes.  
+All movie data and images are provided via [The Movie Database (TMDB)](https://www.themoviedb.org/).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
