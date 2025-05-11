@@ -14,7 +14,7 @@ interface AutocompleteInputProps {
 export default function AutocompleteInput({ onSelect }: AutocompleteInputProps) {
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
-  const [loading, setLoading] = useState(false);
+ const [_loading, setLoading] = useState(false);
   const [noResults, setNoResults] = useState(false);
 
   useEffect(() => {

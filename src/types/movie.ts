@@ -17,4 +17,5 @@ export interface Movie {
   belongs_to_collection: { name: string } | null;
   origin_country: string[];
   production_companies: ProductionCompany[];
+  poster_path: string; 
 }
