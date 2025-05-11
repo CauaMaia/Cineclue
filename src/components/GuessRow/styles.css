@@ -1,0 +1,14 @@
+.guess-row {
+  display: grid;
+  grid-template-columns: 80px repeat(7, 100px);
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.guess-poster {
+  width: 60px;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+}

@@ -1,0 +1,46 @@
+.card-movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em #00000022;
+    transition: transform 300ms;
+    background-color: #fff;
+    width: 800px;
+}
+
+.card-movie__content {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap : 1em;
+}
+
+.card-movie__image {
+    width: 140px;
+    height: auto;
+    border-radius: 0.5em;
+}
+
+.movie_information {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card-movie__title {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+}
+
+.card-movie__description {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+    word-wrap: break-word;
+    margin : 0;
+}
